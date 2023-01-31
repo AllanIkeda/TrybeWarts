@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ' Inknut Antiqua', serif;
+}
+
+.form-section-01 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Header */
+header {
+  margin-bottom: 25px;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 5px;
+  height: 80px;
+}
+
+#trybewarts-header-title {
+  font-size: xxx-large;
+}
+
+.trybewarts-header-logo {
+  width: 90px;
+  height: 80px;
+}
+
+#login-header {
+  display: flex;
+}
+
+#input-senha , #input-email-header {
+  margin-right: 7px;
+  height: 30px;
+  padding: 8px;
+}
+
+#btnEntrar {
+  height: 30px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(42, 127, 255);
+}
+
+#btnEntrar:hover {
+  background-color: rgb(97, 142, 212);
+}
+
+/* Corpo */
+hr {
+  width: 100%;
+  margin: 15px 0;
+}
+
+h2 {
+  margin: 8px 0;
+}
+
+.vertical {
+  height: 60px;
+  width: 0;
+  margin: 0 25px;
+  align-self: center;
+}
+
+body {
+  width: 100%;
+  background-image: url('./images/backgroud.jpg');
+  /* height: 100vh; */
+  background-position: center;
+  background-size: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  background-color: rgba(233, 233, 233, 0.6);
+  height: 96vh;
+  padding: 0 15px 15px;
+}
+
+.div-radio {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+  justify-content: space-between;
+}
+
+.div-check {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+
+.div-check label {
+  flex-direction: row;
+}
+
+#label-content {
+  margin-bottom: 15px;
+  grid-column: 1 / 3;
+}
+
+.form-section-01 label {
+  align-self: center;
+  margin: 0 5%;
+}
+
+.form-section-02 {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: row;
+}
+
+.form-section-02 #label-family {
+  display: flex;
+  flex-direction: row;
+}
+
+#input-email , #textarea , #house , #input-name , #input-lastname {
+  width: 100%;
+  padding: 8px;
+  height: 50px;
+  background-color: rgba(233, 233, 233, 0.6);
+}
+#input-email , #input-name , #input-lastname {
+  padding-top: 1.625rem;
+  padding-bottom: -1.375rem;
+  border-style: red;
+  border-width: 1px;
+  letter-spacing: ;
+}
+
+input {
+
+  /* height: 30px; */
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(233, 233, 233);
+}
+
+#name-lastname {
+  flex-direction: row;
+  grid-template-columns: 2fr 1fr;
+}
+
+#email-house {
+  flex-direction: row;
+}
+
+#textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  padding: 19px;
+}
+
+#input-txt-section {
+  width: 80%;
+  margin: 15px 0;
+  position: relative;
+
+}
+
+#counter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#termos {
+  align-self: flex-start;
+}
+
+#submit-btn {
+  width: 100%;
+  border: none;
+  height: 40px;
+  background-color: rgb(78, 44, 131);
+  color: white;
+  border-radius: 5px;
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
+footer {
+  text-align: center;
+  background-color: grey;
+  padding: 2px;
+  margin: auto;
+}
+
+#form-data {
+  display: none;
+  width: 675px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  background-color: rgba(233, 233, 233, 0.6);
+  height: 80vh;
+  padding: 0 15px 15px;
+}
+
+#labelNameFloat {
+  padding: 11px 0 0;
+}
+
+#house {
+  width: auto;
+  height: 50px;
+}
+
+#labelselect {
+  margin-right: 0;
+  height: 50px;
+}

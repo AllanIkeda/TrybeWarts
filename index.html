@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Trybewarts Forms</title>
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <img
+          src="images/trybewarts-header-logo.svg"
+          alt="logotipo do trybewarts"
+          class="trybewarts-header-logo"
+        />
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form action="" method="get" class="trybewarts-login" id="login-header">
+          <label for="input-email">
+            <input
+              type="email"
+              name="email"
+              id="input-email-header"
+              placeholder="Email"
+            />
+          </label>
+          <label for="input-senha">
+            <input
+              type="password"
+              name="password"
+              placeholder="Senha"
+              id="input-senha"
+            />
+          </label>
+          <button id="btnEntrar">Entrar</button>
+        </form>
+      </section>
+    </header>
+    <main>
+      <form action="" method="get" id="evaluation-form">
+        <h2>Formulário de Avaliação</h2>
+        <section class="form-section-01">
+          <!-- <div> -->
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="nome" placeholder="Nome" id="input-name" />
+            <label for="input-name" id="labelNameFloat">Nome</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="nome"
+              placeholder="Sobrenome"
+              id="input-lastname"
+            />
+            <label for="input-name" id="labelNameFloat">SobreNome</label>
+          </div>
+          <!-- </div> -->
+          <!-- <div id="email-house"> -->
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="input-email" placeholder="Email" />
+              <label for="input-name" id="labelNameFloat">Email</label>
+            </div>
+            <div class="input-group mb-3">
+              <label id="labelselect" class="input-group-text" for="house">Casa:</label>
+                <select name="" class="form-select" id="house">
+                  <option selected>Selecione sua Casa</option>
+                  <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                  <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                  <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                  <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                </select>
+            </div>
+        </section>
+        <hr />
+        <section class="form-section-02">
+          <div class="div-radio">
+            <label for="" id="label-family">Qual sua família?</label>
+            <label for="Frontend">
+              <input
+                type="radio"
+                name="family"
+                value="Frontend"
+                id="Frontend"
+              />Família FrontEnd
+            </label>
+            <label for="Backend">
+              <input
+                type="radio"
+                name="family"
+                value="Backend"
+                id="Backend"
+              />Família BackEnd
+            </label>
+            <label for="FullStack">
+              <input
+                type="radio"
+                name="family"
+                value="FullStack"
+                id="FullStack"
+              />Família FullStack
+            </label>
+          </div>
+          <hr class="vertical" />
+          <div class="div-check">
+            <label id="label-content"
+              >Qual conteúdo você está com mais vontade de aprender?</label
+            >
+            <label
+              ><input type="checkbox" class="subject" value="HoFs" />HoFs
+            </label>
+            <label
+              ><input type="checkbox" class="subject" value="Jest" />Jest
+            </label>
+            <label>
+              <input type="checkbox" class="subject" value="Promises" />Promises
+            </label>
+            <label>
+              <input type="checkbox" class="subject" value="React" />React
+            </label>
+            <label>
+              <input type="checkbox" class="subject" value="SQL" />SQL
+            </label>
+            <label>
+              <input type="checkbox" class="subject" value="Python" />Python
+            </label>
+          </div>
+        </section>
+        <hr />
+        <section>
+          <label for="" id="label-rate"
+            >Como você avalia a Trybewarts?
+            <input type="radio" name="rate" value="1" />1
+            <input type="radio" name="rate" value="2" />2
+            <input type="radio" name="rate" value="3" />3
+            <input type="radio" name="rate" value="4" />4
+            <input type="radio" name="rate" value="5" />5
+            <input type="radio" name="rate" value="6" />6
+            <input type="radio" name="rate" value="7" />7
+            <input type="radio" name="rate" value="8" />8
+            <input type="radio" name="rate" value="9" />9
+            <input type="radio" name="rate" value="10" />10
+          </label>
+        </section>
+        <section id="input-txt-section">
+          <div class="form-floating mb-3">
+          <textarea name="input-txt" class="form-control" id="textarea" maxlength="500" placeholder="Deixe seu comentário:"></textarea>
+          <label for="textarea" id="labelNameFloat" >Deixe seu comentário:</label>
+          <span id="counter">500</span>
+        </div>
+        </section>
+        <hr />
+        <br />
+        <section id="termos">
+          <label for="agreement" id="label-infos"
+            >Você concorda com o uso das informações acima?</label
+          >
+          <input type="checkbox" name="" id="agreement" />
+        </section>
+
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
+      </form>
+      <img
+        src="images/trybewarts-colored.svg"
+        alt="Escudo da Trybewarts Colorido"
+        id="trybewarts-forms-logo"
+      />
+    </main>
+    <br />
+    <script src="script.js"></script>
+    <footer id="footer">
+      <p>Direitos reservados à Trybewarts©</p>
+    </footer>
+  </body>
+</html>
